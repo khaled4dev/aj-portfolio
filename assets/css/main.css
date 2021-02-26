@@ -238,14 +238,6 @@ a.btn-main:hover span {
   .container {
     padding: 0 20px;
   }
-  .main-content-wrapper {
-    margin-top: 50px;
-    height: auto;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
   .portfolio-main {
     height: auto;
   }
@@ -464,6 +456,12 @@ a.btn-main:hover span {
           transform: scale(1);
 }
 
+@media (max-width: 576px) {
+  .scroll-down {
+    bottom: 80px;
+  }
+}
+
 .scroll-down:before {
   position: absolute;
   top: calc(50% - 8px);
@@ -554,13 +552,20 @@ a.btn-main:hover span {
 
 .heading-inner h1 {
   font-size: 9vw;
-  color: #fff;
   max-width: 460px;
-  -webkit-text-fill-color: transparent;
   margin: 0px;
-  background: -webkit-linear-gradient(180deg, #eee, #eee);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 576px) {
+  .heading-inner h1 {
+    font-size: 20vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .aj-intor {
+    margin-top: 30px;
+  }
 }
 
 .aj-intor h2 {
@@ -571,6 +576,12 @@ a.btn-main:hover span {
   margin-bottom: 20px;
 }
 
+@media (max-width: 576px) {
+  .aj-intor h2 {
+    font-size: 25px;
+  }
+}
+
 .aj-intor h2 span {
   background: #FE8A72;
 }
@@ -579,6 +590,12 @@ a.btn-main:hover span {
   width: 80%;
   color: #000;
   opacity: .6;
+}
+
+@media (max-width: 576px) {
+  .aj-intor p {
+    width: 100%;
+  }
 }
 
 .resume-cards {
@@ -592,5 +609,314 @@ a.btn-main:hover span {
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
   border-radius: 30px;
+}
+
+@media (max-width: 576px) {
+  .cards-inner {
+    margin-bottom: 20px;
+    padding: 30px 20px;
+  }
+  .cards-inner h2 {
+    font-size: 1.2rem;
+  }
+  .cards-inner .date {
+    margin-bottom: 10px;
+    display: block;
+  }
+}
+
+.img,
+.blog-img,
+.user-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.ftco-section {
+  padding: 7em 0;
+  position: relative;
+}
+
+.portfolio-wrap {
+  display: block;
+  width: 100%;
+  margin-bottom: 7em;
+}
+
+.portfolio-wrap .text {
+  position: relative;
+}
+
+.portfolio-wrap .text .subheading {
+  display: block;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 3px;
+  color: #000;
+  font-weight: 700;
+}
+
+.portfolio-wrap .text h2 {
+  font-size: 80px;
+  display: inline-block;
+}
+
+.portfolio-wrap .text h2 a {
+  color: #000;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #000;
+}
+
+.portfolio-wrap .text .top-relative h2 {
+  font-size: 50px;
+}
+
+.portfolio-wrap .text .desc {
+  position: relative;
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  .portfolio-wrap .text .desc .top {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  .portfolio-wrap .text .desc .top.top-relative {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  .portfolio-wrap .text .desc .absolute {
+    opacity: 0;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
+  }
+  .portfolio-wrap .text .desc .absolute.relative {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.portfolio-wrap .text .desc .custom-btn {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #b3b3b3;
+  font-weight: 700;
+}
+
+.portfolio-wrap .text:hover {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.portfolio-wrap .text:hover .absolute {
+  position: relative;
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.portfolio-wrap .text:hover .top {
+  position: relative;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.portfolio-entry {
+  position: relative;
+  margin-bottom: 7em;
+}
+
+.portfolio-entry .text-wrapper {
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  .portfolio-entry .text-wrapper {
+    height: inherit;
+  }
+}
+
+.portfolio-entry .one-half {
+  width: 60% !important;
+}
+
+@media (min-width: 1200px) {
+  .portfolio-entry .one-half {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .portfolio-entry .one-half.half-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 80% !important;
+    margin: 0 auto;
+  }
+  .portfolio-entry .one-half.half-text .text {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    max-width: 60%;
+  }
+  .portfolio-entry .one-half.half-text .text-2 {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    max-width: 58%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .portfolio-entry .one-half.half-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 1140px;
+    margin: 0 auto;
+  }
+  .portfolio-entry .one-half.half-text .text {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    max-width: 58%;
+  }
+  .portfolio-entry .one-half.half-text .text-2 {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    max-width: 58%;
+  }
+}
+
+.portfolio-entry .one-half.half-text .subheading {
+  display: block;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 3px;
+  color: #000;
+  font-weight: 700;
+}
+
+.portfolio-entry .one-half.half-text h2 {
+  font-size: 80px;
+  display: inline-block;
+}
+
+@media (min-width: 1200px) {
+  .portfolio-entry .one-half.half-text h2 {
+    font-size: 16vw;
+  }
+}
+
+.portfolio-entry .one-half.half-text h2 a {
+  color: #000;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #000;
+}
+
+.portfolio-entry .one-half.half-text .text .desc, .portfolio-entry .one-half.half-text .text-2 .desc {
+  position: relative;
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  .portfolio-entry .one-half.half-text .text .desc .top, .portfolio-entry .one-half.half-text .text-2 .desc .top {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  .portfolio-entry .one-half.half-text .text .desc .absolute, .portfolio-entry .one-half.half-text .text-2 .desc .absolute {
+    opacity: 0;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
+  }
+}
+
+.portfolio-entry .one-half.half-text .text .desc .custom-btn, .portfolio-entry .one-half.half-text .text-2 .desc .custom-btn {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #b3b3b3;
+  font-weight: 700;
+}
+
+.portfolio-entry .one-half.half-text .text:hover, .portfolio-entry .one-half.half-text .text-2:hover {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.portfolio-entry .one-half.half-text .text:hover .absolute, .portfolio-entry .one-half.half-text .text-2:hover .absolute {
+  position: relative;
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.portfolio-entry .one-half.half-text .text:hover .top, .portfolio-entry .one-half.half-text .text-2:hover .top {
+  position: relative;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.portfolio-entry .one-half.half-text h2 {
+  font-size: 80px;
+  display: inline-block;
+}
+
+.heading-section .subheading {
+  font-size: 18px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.heading-section h2 {
+  font-size: 14vw;
+  font-weight: 900;
+  line-height: 1.0;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.heading-section h2 span {
+  font-weight: 400;
+  display: block;
+  text-align: right;
+}
+
+.heading-section.heading-section-white .subheading {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.heading-section.heading-section-white h2 {
+  font-size: 40px;
+  color: #fff;
+}
+
+.heading-section.heading-section-white p {
+  color: rgba(255, 255, 255, 0.9);
 }
 /*# sourceMappingURL=main.css.map */
