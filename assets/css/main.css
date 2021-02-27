@@ -39,10 +39,6 @@ body {
 }
 
 /* Navbar */
-header {
-  padding-top: 35px;
-}
-
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -354,9 +350,9 @@ a.btn-main:hover span {
 }
 
 :root {
-  --color-stroke: #F0BEC7;
-  --color-bg:#FFFFFF;
-  --color-text: #FFFFFF;
+  --color-stroke: #f0bec7;
+  --color-bg: #ffffff;
+  --color-text: #ffffff;
 }
 
 .introText {
@@ -366,7 +362,7 @@ a.btn-main:hover span {
   text-transform: uppercase;
   position: relative;
   text-align: center;
-  font-family: 'Reggae One', cursive;
+  font-family: "Reggae One", cursive;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -413,107 +409,6 @@ a.btn-main:hover span {
   }
 }
 
-.p-small-con {
-  position: absolute;
-  top: 20%;
-}
-
-.p-small-con h6 {
-  font-weight: 300;
-  font-size: 20px;
-  letter-spacing: 1px;
-  color: #2F1F5A;
-}
-
-.p-small-con small {
-  margin-bottom: 10px;
-  display: block;
-}
-
-.scroll-down {
-  opacity: 1;
-  -webkit-transition: all .5s ease-in 3s;
-  transition: all .5s ease-in 3s;
-}
-
-.scroll-down {
-  position: absolute;
-  bottom: 50px;
-  left: 50%;
-  margin-left: -16px;
-  display: block;
-  width: 32px;
-  height: 32px;
-  border: 2px solid #000;
-  background-size: 14px auto;
-  border-radius: 50%;
-  z-index: 2;
-  -webkit-animation: bounce 2s infinite 2s;
-  animation: bounce 2s infinite 2s;
-  -webkit-transition: all .2s ease-in;
-  transition: all .2s ease-in;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-}
-
-@media (max-width: 576px) {
-  .scroll-down {
-    bottom: 80px;
-  }
-}
-
-.scroll-down:before {
-  position: absolute;
-  top: calc(50% - 8px);
-  left: calc(50% - 6px);
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  display: block;
-  width: 12px;
-  height: 12px;
-  content: "";
-  border: 2px solid #000;
-  border-width: 0px 0 2px 2px;
-}
-
-@-webkit-keyframes bounce {
-  0%,
-  100%,
-  20%,
-  50%,
-  80% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-  40% {
-    -webkit-transform: translateY(-10px);
-    transform: translateY(-10px);
-  }
-  60% {
-    -webkit-transform: translateY(-5px);
-    transform: translateY(-5px);
-  }
-}
-
-@keyframes bounce {
-  0%,
-  100%,
-  20%,
-  50%,
-  80% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-  40% {
-    -webkit-transform: translateY(-10px);
-    transform: translateY(-10px);
-  }
-  60% {
-    -webkit-transform: translateY(-5px);
-    transform: translateY(-5px);
-  }
-}
-
 .about-section {
   padding: 100px 0px;
 }
@@ -552,7 +447,6 @@ a.btn-main:hover span {
 
 .heading-inner h1 {
   font-size: 9vw;
-  max-width: 460px;
   margin: 0px;
 }
 
@@ -564,7 +458,7 @@ a.btn-main:hover span {
 
 @media (max-width: 576px) {
   .aj-intor {
-    margin-top: 30px;
+    margin-top: 50px;
   }
 }
 
@@ -583,13 +477,13 @@ a.btn-main:hover span {
 }
 
 .aj-intor h2 span {
-  background: #FE8A72;
+  background: #fe8a72;
 }
 
 .aj-intor p {
   width: 80%;
   color: #000;
-  opacity: .6;
+  opacity: 0.6;
 }
 
 @media (max-width: 576px) {
@@ -625,12 +519,10 @@ a.btn-main:hover span {
   }
 }
 
-.img,
-.blog-img,
-.user-img {
+.img {
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: left;
 }
 
 .ftco-section {
@@ -835,19 +727,22 @@ a.btn-main:hover span {
   border-bottom: 3px solid #000;
 }
 
-.portfolio-entry .one-half.half-text .text .desc, .portfolio-entry .one-half.half-text .text-2 .desc {
+.portfolio-entry .one-half.half-text .text .desc,
+.portfolio-entry .one-half.half-text .text-2 .desc {
   position: relative;
   width: 100%;
 }
 
 @media (min-width: 1200px) {
-  .portfolio-entry .one-half.half-text .text .desc .top, .portfolio-entry .one-half.half-text .text-2 .desc .top {
+  .portfolio-entry .one-half.half-text .text .desc .top,
+  .portfolio-entry .one-half.half-text .text-2 .desc .top {
     -webkit-transform: translateY(50%);
             transform: translateY(50%);
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
-  .portfolio-entry .one-half.half-text .text .desc .absolute, .portfolio-entry .one-half.half-text .text-2 .desc .absolute {
+  .portfolio-entry .one-half.half-text .text .desc .absolute,
+  .portfolio-entry .one-half.half-text .text-2 .desc .absolute {
     opacity: 0;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
@@ -856,7 +751,8 @@ a.btn-main:hover span {
   }
 }
 
-.portfolio-entry .one-half.half-text .text .desc .custom-btn, .portfolio-entry .one-half.half-text .text-2 .desc .custom-btn {
+.portfolio-entry .one-half.half-text .text .desc .custom-btn,
+.portfolio-entry .one-half.half-text .text-2 .desc .custom-btn {
   text-transform: uppercase;
   font-size: 12px;
   letter-spacing: 3px;
@@ -864,19 +760,22 @@ a.btn-main:hover span {
   font-weight: 700;
 }
 
-.portfolio-entry .one-half.half-text .text:hover, .portfolio-entry .one-half.half-text .text-2:hover {
+.portfolio-entry .one-half.half-text .text:hover,
+.portfolio-entry .one-half.half-text .text-2:hover {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
-.portfolio-entry .one-half.half-text .text:hover .absolute, .portfolio-entry .one-half.half-text .text-2:hover .absolute {
+.portfolio-entry .one-half.half-text .text:hover .absolute,
+.portfolio-entry .one-half.half-text .text-2:hover .absolute {
   position: relative;
   opacity: 1;
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
 
-.portfolio-entry .one-half.half-text .text:hover .top, .portfolio-entry .one-half.half-text .text-2:hover .top {
+.portfolio-entry .one-half.half-text .text:hover .top,
+.portfolio-entry .one-half.half-text .text-2:hover .top {
   position: relative;
   -webkit-transform: translateY(0);
           transform: translateY(0);
@@ -896,7 +795,7 @@ a.btn-main:hover span {
 .heading-section h2 {
   font-size: 14vw;
   font-weight: 900;
-  line-height: 1.0;
+  line-height: 1;
   text-transform: uppercase;
   text-align: left;
 }
@@ -918,5 +817,138 @@ a.btn-main:hover span {
 
 .heading-section.heading-section-white p {
   color: rgba(255, 255, 255, 0.9);
+}
+
+.home-banner {
+  height: 700px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.home-inner img {
+  position: absolute;
+  left: 50%;
+  top: 0%;
+  margin: 0 auto;
+  z-index: 2;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+@media (max-width: 576px) {
+  .home-inner img {
+    width: 350px;
+    left: 50%;
+    top: 10%;
+  }
+}
+
+.text-caption {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 25%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+@media (max-width: 576px) {
+  .text-caption {
+    top: 30%;
+  }
+}
+
+.text-caption h1 {
+  padding: 0 25px;
+  text-transform: uppercase;
+  position: relative;
+  font-size: 200px;
+  color: #000;
+  white-space: nowrap;
+  letter-spacing: 10px;
+  -webkit-animation: infiniteText 10s  linear infinite;
+          animation: infiniteText 10s  linear infinite;
+  font-family: "Reggae One", cursive;
+}
+
+@media (max-width: 576px) {
+  .text-caption h1 {
+    font-size: 80px;
+  }
+}
+
+@-webkit-keyframes infiniteText {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+@keyframes infiniteText {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+.main-sub-heading {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  color: transparent !important;
+  -webkit-text-stroke: #000;
+  -webkit-text-stroke-width: 3px;
+  z-index: 2;
+}
+
+.img-circle {
+  position: absolute;
+  bottom: 0px;
+  left: 3%;
+}
+
+.img-circle-text {
+  width: 130px;
+  -webkit-animation: circulartext 15s linear infinite;
+          animation: circulartext 15s linear infinite;
+}
+
+@-webkit-keyframes circulartext {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes circulartext {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.resum-section {
+  padding: 100px 0px;
+}
+
+.services-cards {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 /*# sourceMappingURL=main.css.map */
