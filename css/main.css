@@ -1,0 +1,336 @@
+html {
+  --size: 40px;
+  --t-1: 9.5px;
+  --t-3: -9.5px;
+  --c-box: 4;
+  font-family: "Source Code Pro", sans-serif;
+  color: white;
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  width: 0.4em;
+}
+
+body::-webkit-scrollbar,
+body::-webkit-scrollbar-thumb {
+  overflow: visible;
+  border-radius: 4px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+section,
+div[class^="section"] {
+  height: 100vh;
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  padding: 0;
+  margin: 0;
+}
+
+.section1 {
+  top: 0;
+  background: #090057;
+  color: white;
+  text-align: center;
+}
+
+.section2-before {
+  height: 25vh !important;
+  background: linear-gradient(354deg, #c400c6 50%, rgba(0, 0, 0, 0) 50%);
+  z-index: 2;
+}
+
+.section2 {
+  top: 0;
+  background: #c400c6;
+  z-index: 2;
+}
+
+.section3-before {
+  height: 25vh !important;
+  background: linear-gradient(6deg, #ffa069 50%, rgba(0, 0, 0, 0) 50%);
+  z-index: 2;
+}
+
+.section3 {
+  top: 0;
+  background: #ffa069;
+  z-index: 3;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+#menu {
+  position: fixed;
+  margin: auto;
+  z-index: 99;
+}
+
+div.menu-right {
+  width: 100%;
+  height: 40px;
+  padding: 0;
+  margin: 0;
+}
+
+div.menu-right {
+  text-align: right;
+}
+
+div.menu-right > ul {
+  display: inline-block;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  min-width: 40%;
+  text-align: center;
+  font-weight: 700;
+  overflow: hidden;
+  color: white;
+}
+
+div.menu-right > ul > li {
+  padding: 10px 16px;
+  display: inline-block;
+  margin: 0;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.menu-marker {
+  display: inline-block;
+  position: relative;
+  width: var(--size);
+  height: var(--size);
+  padding: 0 !important;
+  -webkit-transform: translate(0, -20%);
+          transform: translate(0, -20%);
+}
+
+.menu-marker > input[type="checkbox"] {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  -webkit-transform: scale(var(--c-box));
+          transform: scale(var(--c-box));
+  opacity: 0;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.menu-marker ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+  z-index: 1;
+  vertical-align: middle;
+}
+
+.menu-marker li {
+  background: white;
+  border: white solid 1px;
+  margin: calc(var(--size) / 5) 0;
+  -webkit-transition: ease-in-out 0.5s all;
+  transition: ease-in-out 0.5s all;
+}
+
+li.first-bar {
+  width: 80%;
+  height: var(--size)/20;
+}
+
+li.second-bar {
+  width: 100%;
+  height: var(--size)/20;
+}
+
+li.third-bar {
+  width: 60%;
+  height: var(--size)/20;
+}
+
+.menu-marker > input[type="checkbox"]:checked ~ ul li.first-bar,
+.menu-marker > input[type="checkbox"]:checked ~ ul li.third-bar {
+  width: 100%;
+}
+
+.menu-marker > input[type="checkbox"]:checked ~ ul li.second-bar {
+  opacity: 0;
+}
+
+.menu-marker > input[type="checkbox"]:checked ~ ul li.first-bar {
+  -webkit-transform: translateY(var(--t-1)) rotate(225deg);
+          transform: translateY(var(--t-1)) rotate(225deg);
+}
+
+.menu-marker > input[type="checkbox"]:checked ~ ul li.third-bar {
+  -webkit-transform: translateY(var(--t-3)) rotate(315deg);
+          transform: translateY(var(--t-3)) rotate(315deg);
+}
+
+.menu-right > ul {
+  -webkit-transform: translateX(5%);
+          transform: translateX(5%);
+}
+
+.menu-right > ul {
+  opacity: 0;
+  -webkit-transition: ease-in-out 0.5s all;
+  transition: ease-in-out 0.5s all;
+}
+
+.menu-active {
+  -webkit-transform: translateX(0%) !important;
+          transform: translateX(0%) !important;
+  opacity: 1 !important;
+}
+
+section.section2 > div,
+section.section3 > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.section2 > div > div,
+section.section3 > div > div {
+  width: 100%;
+  padding: 0 20px;
+}
+
+.line-1 {
+  position: relative;
+  top: 50%;
+  width: 15em;
+  margin: 0 auto;
+  border-right: 2px solid white;
+  font-size: 250%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+/* Animation */
+.anim-typewriter {
+  -webkit-animation: typewriter 3s steps(40) 1s 1 normal both, blinkTextCursor 500ms steps(20) infinite normal;
+          animation: typewriter 3s steps(40) 1s 1 normal both, blinkTextCursor 500ms steps(20) infinite normal;
+}
+
+@-webkit-keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 19.5em;
+  }
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 19.5em;
+  }
+}
+
+@-webkit-keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(0, 0, 0, 0);
+  }
+  to {
+    border-right-color: white;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(0, 0, 0, 0);
+  }
+  to {
+    border-right-color: white;
+  }
+}
+
+.home-banner-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.navbar-sec {
+  position: absolute;
+  left: 0px;
+  top: 10px;
+  z-index: 9;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.left-logo {
+  position: relative;
+  font-weight: 900;
+  font-size: 26px;
+  z-index: 0;
+  color: #fff;
+  width: 20%;
+}
+
+.left-logo span {
+  font-size: 40px;
+}
+
+.left-logo::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -12px;
+  width: 40px;
+  height: 40px;
+  background-color: red;
+  border-radius: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: -1;
+}
+
+.right-menu {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+/*# sourceMappingURL=main.css.map */
