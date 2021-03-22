@@ -7,8 +7,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
+  <div id="cursor"></div>
     
     <div class="navbar-sec">
             <div class="container d-flex align-items-start">
@@ -20,8 +22,8 @@
                     <div class="menu-right">
                       <ul>
                         <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#feedback">Feedback</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#work">My Work</a></li>
                       </ul>
                       <div class="menu-marker">
                         <input type="checkbox">
@@ -38,54 +40,289 @@
     </div>
   
       <section id="home" class="section1">
-        <!-- <div>
-          <h1 class="line-1 anim-typewriter">Welcome to the World Of Choices.</h1>
-          <h3 data-aos="zoom-out" data-aos-delay="3000" data-aos-duration="1000" data-aos-easing="ease-in-cubic" style="color: #ffa069">Here you will find what you seek.</h3>
-        </div> -->
+      
         <div class="home-banner-section">
             <div class="container">
 
-                <div class="row">
-                    <div class="col-sm-6">asdsa</div>
-                    <div class="col-sm-6">
-                        <div class="banner-img"><img src="images/work-img.png" alt="" class="img-fluid"></div>
+                <div class="row align-items-center">
+                    <div class="col-sm-7">
+                      <p class="subdis" data-aos="fade-up"  
+                      data-aos-delay="50"
+                      data-aos-duration="2000">
+                        Hey <span class="wave">👋</span>, im <span class="text-span">Syed Ajwad</span>
+                      </p>
+                      <h1 class="subhead" data-aos="fade-up"  
+                      data-aos-delay="50"
+                      data-aos-duration="3000">
+                        <span class="bold">Frontend Developer, Angular Expert </span> . I create & develop
+                        <span class="bold">corporate-websites</span> and <span class="bold">Angular-applications.</span>
+                      </h1>
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="banner-img" data-aos="fade-up"  
+                        data-aos-delay="50"
+                        data-aos-duration="3000"><img src="images/work-img.png" alt="" class="img-fluid"></div>
                     </div>
                 </div>
             </div>
         </div>
       </section>
       <div class="section2-before"></div>
-      <section id="about" class="section2">
-        <div>
-          <div data-aos="fade-up" style="font-size:12px;margin:auto 0;">
-            <h1 style="color:#090057">This is a new Section</h1>
-            <h4>So now you must be familiar with parallax scrolling.</h4>
-          </div>
-          <div data-aos="fade-up" style="font-size:20px">
-            <h1 style="color:#090057">If you like the pen</h1>
-            <h4>Make Sure you hit the ❤<br>That would really help a lot.</h4>
+      <section id="services" class="section2">
+        <div class="services-section">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6">
+                  <div class="services-inner">
+                    <h2 class="heading" data-aos="fade-up"  data-aos-offset="100"
+                    data-aos-delay="50"
+                    data-aos-duration="3000">Services</h2>
+                    <p class="paragraph" data-aos="fade-up"  data-aos-offset="100"
+                    data-aos-delay="50"
+                    data-aos-duration="3000">My services include the whole process of digital product design for websites and web-apps, as well as communication of brands and visualizations, user experience design (UX) and user interface design (UI).</p>
+                    <a href="" class=" btn-get" data-aos="fade-up"  data-aos-offset="100"
+                    data-aos-delay="50"
+                    data-aos-duration="3000">
+                      Get in Touch
+                    </a>
+                  </div>
+              </div>
+              <div class="col-sm-6">
+                <ul class="services-feature">
+                  <li data-aos="fade-up"  data-aos-offset="100"
+                  data-aos-delay="50"
+                  data-aos-duration="1000">
+                    Webdesign
+                  </li>
+                  <li data-aos="fade-up"  data-aos-offset="100"
+                  data-aos-delay="50"
+                  data-aos-duration="2000">
+                    UX/UI Design
+                  </li>
+                  <li data-aos="fade-up"  data-aos-offset="100"
+                  data-aos-delay="50"
+                  data-aos-duration="3000">
+                    Responsive Design
+                  </li>
+                  <li data-aos="fade-up"  data-aos-offset="100"
+                  data-aos-delay="100"
+                  data-aos-duration="3000">
+                    Seo
+                  </li>
+                  <!-- <li>
+                    Webdesign
+                  </li> -->
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </section>
       <div class="section3-before"></div>
-      <section id="feedback" class="section3">
-        <div>
-          <div data-aos="fade-up" style="font-size:20px;">
-            <h1 style="color:#090057">I am a freelancer</h1>
-            <h4>You can hire me sending me a mail at <span style="color:#090057">jewelbarman998@gmail.com</span<</h4>
+      <section id="work" class="section3">
+        <div class="mywork">
+          <div class="container">
+            <h2 class="heading" data-aos="fade-up"  data-aos-offset="100"
+            data-aos-delay="50"
+            data-aos-duration="3000">Selected Projects</h2>
           </div>
-          <div data-aos="fade-up" style="font-size:14px;margin:auto 0;">
-            <h1 style="color:#090057">If you <span style="color:red">❤</span> this pen</h1>
-            <h4>Make sure to checkout my other pens, click <a href="https://codepen.io/jewel998/">here 😍</a></h4>
+          <div class="container">
+
+            <ul class="project-list">
+              <li>
+                <a href="" class="project-inner">
+                  <div class="left-side-con">
+                      <h1 data-aos="fade-up"  data-aos-offset="100"
+                      data-aos-delay="50"
+                      data-aos-duration="3000">
+                        Spaarks<span class="text-muted">
+                          Spreading smiles
+                        </span>
+                      </h1>
+
+                      <span class="text-muted" data-aos="fade-up"  data-aos-offset="100"
+                      data-aos-delay="50"
+                      data-aos-duration="3000">
+                       2020 / Busniess
+                      </span>
+
+                      <p data-aos="fade-up"  data-aos-offset="100"
+                      data-aos-delay="50"
+                      data-aos-duration="3000">
+                        Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. 
+                      </p>
+                      
+                  </div>
+                  <div class="right-side-img" data-aos="fade-right"  data-aos-offset="100"
+                  data-aos-delay="50"
+                  data-aos-duration="3000">
+                    <img src="images/project-1.png" alt="" class="img-fluid">
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="" class="project-inner">
+                  <div class="left-side-con">
+                      <h1 data-aos="fade-up"  data-aos-offset="100"
+                      data-aos-delay="50"
+                      data-aos-duration="3000">
+                        Spaarks<span class="text-muted">
+                          Spreading smiles
+                        </span>
+                      </h1>
+
+                      <span class="text-muted" data-aos="fade-up"  data-aos-offset="100"
+                      data-aos-delay="50"
+                      data-aos-duration="3000">
+                       2020 / Busniess
+                      </span>
+
+                      <p data-aos="fade-up"  data-aos-offset="100"
+                      data-aos-delay="50"
+                      data-aos-duration="3000">
+                        Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. 
+                      </p>
+                      
+                  </div>
+                  <div class="right-side-img" data-aos="fade-right"  data-aos-offset="100"
+                  data-aos-delay="50"
+                  data-aos-duration="3000">
+                    <img src="images/project-1.png" alt="" class="img-fluid">
+                  </div>
+                </a>
+              </li>
+            </ul>
           </div>
+
         </div>
       </section>
+
+      <div class="section4-before"></div>
+      <section id="services" class="section4">
+        <div class="about-section">
+          <br>
+          <br>
+          <br>
+          <div class="container">
+            <h2 class="heading" data-aos="fade-up"  data-aos-offset="100"
+            data-aos-delay="50"
+            data-aos-duration="3000">About me</h2>
+        
+
+          <div class="about-dis" data-aos="fade-up"  data-aos-offset="100"
+          data-aos-delay="50"
+          data-aos-duration="3000">
+            <h2>
+              I design cross-platform solutions, where user centered. My hobbies are Freeletics, Oldtimer and Low-Code Tools. This portfolio shows some examples from my private and my professional work.
+            </h2>
+            <br>
+            <div class="skills" data-aos="fade-up"  data-aos-offset="100"
+            data-aos-delay="50"
+            data-aos-duration="3000">
+              <!-- <h4>
+                My Skills
+              </h4> -->
+              <ul>
+                <li>
+                  Angular
+                </li>
+                <li>
+                  TypeScript
+                </li>
+                <li>
+                  JavaScript
+                </li>
+                <li>
+                  HTML5
+                </li>
+                <li>
+                  CSS3
+                </li>
+                <li>
+                  Bootstrap 3/4
+                </li>
+                <li>
+                 Scss
+                </li>
+                <li>
+                  Responsive Design
+                 </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+        </div>
+      </section>
+
+      <div class="section5-before"></div>
+      <section class="section5">
+        <div class="contact-section">
+            <div class="container">
+              <div class="footer-top">
+                <h3 class="text-center" data-aos="fade-up"  data-aos-offset="100"
+                data-aos-delay="50"
+                data-aos-duration="3000">
+                  You are just a few clicks away from, realizing <b>
+                    your dream project.
+                  </b> 
+                </h3>
+              </div>
+              <div class="footer-row">
+                <div class="footer-left">
+
+                  <h2 class="heading" data-aos="fade-up"  data-aos-offset="100"
+                  data-aos-delay="50"
+                  data-aos-duration="3000">Let's talk! <br>
+                   
+                    </h2>
+                    <p data-aos="fade-up"  data-aos-offset="100"
+                    data-aos-delay="50"
+                    data-aos-duration="3000">
+                      I'm always interested in working on new products. Hit me if you need to chat with me about your project!
+                    </p>
+                </div>
+
+                <div class="footer-right">
+                  <div class="footer-right" data-aos="fade-up"  data-aos-offset="100"
+                  data-aos-delay="50"
+                  data-aos-duration="3000">
+                    <div class="text-block-4">MAIL&nbsp;ME</div>
+                    <a href="mailto:hey@aydaoz.co?subject=Hi!" class="link">hey@aydaoz.co</a>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-row">
+                <div class="footer-left" data-aos="fade-up"  data-aos-offset="100"
+                data-aos-delay="50"
+                data-aos-duration="3000">
+                  <div class="text-block-4">ON&nbsp;SOCIAL&nbsp;WORLD</div>
+                  <div class="social-bar">
+                    <a href="" class="social-link w-inline-block"><img src="images/Shape.svg" alt=""></a>
+                    <a href="" class="social-link w-inline-block"><img src="images/medium.svg" alt=""></a>
+                    <a href="" class="social-link w-inline-block"><img src="images/instagram.svg" alt=""></a>
+                  </div>
+                </div>
+                <div class="footer-right">
+                  <!-- <div class="text-block-4">FILL&nbsp;UP&nbsp;A&nbsp;FORM</div>
+                  <a href="https://letstalkhere.typeform.com/to/pYayfS" class="link-block w-inline-block">
+                    <div class="text-block-19">QUICK&nbsp;BRIEF</div>
+                  </a> -->
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
+
+      
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-      <script src="https://raw.githubusercontent.com/tengbao/vanta/master/vendor/three.r92.min.js"></script>
-      <!-- <script src="https://raw.githubusercontent.com/tengbao/vanta/master/dist/vanta.birds.min.js"></script> -->
+      <!-- <script src="https://raw.githubusercontent.com/tengbao/vanta/master/vendor/three.r92.min.js"></script> -->
+
+
       <script src="js/main.js"></script>
+ 
 </body>
 </html>
