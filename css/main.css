@@ -3,7 +3,6 @@ html {
   --t-1: 9.5px;
   --t-3: -9.5px;
   --c-box: 4;
-  font-family: "Source Code Pro", sans-serif;
   color: white;
   scroll-behavior: smooth;
 }
@@ -70,25 +69,25 @@ div[class^="section"] {
 
 .section5-before {
   min-height: 25vh !important;
-  background: linear-gradient(6deg, #FFF2F0 50%, rgba(0, 0, 0, 0) 50%);
+  background: linear-gradient(6deg, #FEF2EF 50%, rgba(0, 0, 0, 0) 50%);
   z-index: 3;
 }
 
 .section5 {
   top: 0;
-  background: #FFF2F0;
+  background: #FEF2EF;
   z-index: 3;
 }
 
 .section4-before {
   min-height: 25vh !important;
-  background: linear-gradient(354deg, #FEF2EF 50%, rgba(0, 0, 0, 0) 50%);
+  background: linear-gradient(354deg, #E2F7E5 50%, rgba(0, 0, 0, 0) 50%);
   z-index: 4;
 }
 
 .section4 {
   top: 0;
-  background: #FEF2EF;
+  background: #E2F7E5;
   z-index: 3;
 }
 
@@ -729,5 +728,48 @@ li.third-bar {
 .w-inline-block {
   max-width: 100%;
   display: inline-block;
+}
+
+.team-member {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.team-member .top-img img {
+  width: 100px;
+}
+
+.team-member .team-dis {
+  margin-top: 20px;
+}
+
+.team-member .team-dis h3 {
+  color: #081f4d;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+}
+
+.team-member .team-dis small {
+  color: #7483a9;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.our-team {
+  margin-bottom: 50px;
 }
 /*# sourceMappingURL=main.css.map */
