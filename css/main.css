@@ -29,7 +29,8 @@ body {
 
 section,
 div[class^="section"] {
-  height: 100vh;
+  height: auto;
+  min-height: 100vh;
   width: 100%;
   position: -webkit-sticky;
   position: sticky;
@@ -44,50 +45,50 @@ div[class^="section"] {
 }
 
 .section2-before {
-  height: 25vh !important;
-  background: linear-gradient(354deg, whitesmoke 50%, rgba(0, 0, 0, 0) 50%);
+  min-height: 25vh !important;
+  background: linear-gradient(354deg, #FEF8F7 50%, rgba(0, 0, 0, 0) 50%);
   z-index: 2;
 }
 
 .section2 {
   top: 0;
-  background: whitesmoke;
+  background: #FEF8F7;
   z-index: 2;
 }
 
 .section3-before {
-  height: 25vh !important;
-  background: linear-gradient(6deg, #fff 50%, rgba(0, 0, 0, 0) 50%);
+  min-height: 25vh !important;
+  background: linear-gradient(6deg, #F6EEF4 50%, rgba(0, 0, 0, 0) 50%);
   z-index: 2;
 }
 
 .section3 {
   top: 0;
-  background: #fff;
+  background: #F6EEF4;
   z-index: 2;
 }
 
 .section5-before {
-  height: 25vh !important;
-  background: linear-gradient(6deg, #fff 50%, rgba(0, 0, 0, 0) 50%);
+  min-height: 25vh !important;
+  background: linear-gradient(6deg, #FFF2F0 50%, rgba(0, 0, 0, 0) 50%);
   z-index: 3;
 }
 
 .section5 {
   top: 0;
-  background: #fff;
+  background: #FFF2F0;
   z-index: 3;
 }
 
 .section4-before {
-  height: 25vh !important;
-  background: linear-gradient(354deg, whitesmoke 50%, rgba(0, 0, 0, 0) 50%);
+  min-height: 25vh !important;
+  background: linear-gradient(354deg, #FEF2EF 50%, rgba(0, 0, 0, 0) 50%);
   z-index: 4;
 }
 
 .section4 {
   top: 0;
-  background: whitesmoke;
+  background: #FEF2EF;
   z-index: 3;
 }
 
@@ -335,13 +336,13 @@ li.third-bar {
 }
 
 .left-logo::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   left: -12px;
   width: 40px;
   height: 40px;
-  background-color: #F96155;
+  background-color: #f96155;
   border-radius: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -382,6 +383,18 @@ li.third-bar {
   font-weight: 300;
   cursor: pointer;
   letter-spacing: 1px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 599px) {
+  .subhead {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 599px) {
+  .mb-20 {
+    margin-bottom: 50px;
+  }
 }
 
 .subdis {
@@ -528,8 +541,8 @@ li.third-bar {
   padding: 10px 80px;
   position: relative;
   overflow: hidden;
-  -webkit-transition: background-color .5s ease-in;
-  transition: background-color .5s ease-in;
+  -webkit-transition: background-color 0.5s ease-in;
+  transition: background-color 0.5s ease-in;
   display: inline-block;
 }
 
@@ -599,6 +612,12 @@ li.third-bar {
   font-weight: 400;
 }
 
+@media screen and (min-width: 320px) and (max-width: 599px) {
+  .about-dis h2 {
+    width: 100%;
+  }
+}
+
 .skills ul {
   width: 50%;
   -webkit-columns: 2;
@@ -615,14 +634,14 @@ li.third-bar {
   position: absolute;
   width: 10px;
   height: 10px;
-  background: #F96155;
+  background: #f96155;
   border-radius: 50%;
   mix-blend-mode: difference;
   pointer-events: none;
-  -webkit-transition: -webkit-transform .15s ease-in-out;
-  transition: -webkit-transform .15s ease-in-out;
-  transition: transform .15s ease-in-out;
-  transition: transform .15s ease-in-out, -webkit-transform .15s ease-in-out;
+  -webkit-transition: -webkit-transform 0.15s ease-in-out;
+  transition: -webkit-transform 0.15s ease-in-out;
+  transition: transform 0.15s ease-in-out;
+  transition: transform 0.15s ease-in-out, -webkit-transform 0.15s ease-in-out;
   z-index: 999;
 }
 
@@ -673,14 +692,14 @@ li.third-bar {
 
 .text-block-4 {
   margin-top: 32px;
-  font-family: 'hmm nah', Arial, sans-serif;
+  font-family: "hmm nah", Arial, sans-serif;
   color: #7e7e7e;
   font-size: 12px;
   letter-spacing: 2px;
 }
 
 .link {
-  font-family: 'hmm nah', Arial, sans-serif;
+  font-family: "hmm nah", Arial, sans-serif;
   color: #56e6a5;
   font-size: 32px;
   line-height: 50px;
